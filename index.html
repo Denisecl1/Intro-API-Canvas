@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería API Canvas - Diana Campos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="fw-bold text-primary">Laboratorio de Ambientes Virtuales</h1>
+            <p class="text-muted">Práctica 1.1 Introducción a la graficación 2D  </p>
+        </header>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas1" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">01. Rectángulo Relleno</h6>
+                        <small class="text-muted">Uso de fillStyle y fillRect.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas2" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">02. Borrado y Contorno</h6>
+                        <small class="text-muted">clearrect y strokeRect.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas3" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">03. Caminos (Paths)</h6>
+                        <small class="text-muted">Dibujando un triángulo con lineTo.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas4" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">04. Movimiento de Pluma</h6>
+                        <small class="text-muted">Uso de moveTo y arc para trazados complejos.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas5" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">05. Estilos de Trazo</h6>
+                        <small class="text-muted">Diferencia entre fill y stroke.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas6" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">06. Bucles y Arcos</h6>
+                        <small class="text-muted">Renderizado mediante ciclos for.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas7" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">07. Curvas Cuadráticas</h6>
+                        <small class="text-muted">Bézier con un punto de control.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas8" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">08. Curvas Cúbicas</h6>
+                        <small class="text-muted">bezierCurveTo para formas orgánicas.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas9" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">09. Combinación de Formas</h6>
+                        <small class="text-muted">Dibujo avanzado y funciones auxiliares.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="canvas-container p-3 text-center">
+                        <canvas id="canvas10" width="200" height="200"></canvas>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="fw-bold">10. Objetos Path2D</h6>
+                        <small class="text-muted">Almacenamiento de rutas para reutilización.</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+<footer class="footer mt-auto py-4">
+    <div class="container text-center">
+        <hr class="my-4 text-muted">
+        <p class="mb-1 fw-bold text-primary">Diana Denise Campos Lozano</p>
+        <p class="text-muted mb-0">9no Semestre | Ingeniería en TIC's</p>
+        <p class="small text-secondary mt-2">Pachuca, Hidalgo - 2026</p>
+    </div>
+</footer>
+</html>

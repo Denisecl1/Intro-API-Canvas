@@ -1,0 +1,132 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL Y LAYOUT
+   ========================================= */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Fondo con degradado suave */
+    background: linear-gradient(135deg, #e0f2fe 0%, #fef2f2 50%, #f5f3ff 100%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal para empujar el footer hacia abajo */
+.container.py-5 {
+    flex: 1 0 auto;
+}
+
+h1 {
+    color: #4f46e5;
+    letter-spacing: -1px;
+}
+
+/* =========================================
+   TARJETAS (ESTILO GLASSMORPHISM)
+   ========================================= */
+.card {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 20px !important;
+    transition: all 0.3s ease-in-out;
+    /* Borde de 3px para que los colores sean muy notorios */
+    border: 3px solid white !important; 
+    overflow: hidden;
+}
+
+/* Asignación de colores neón/pastel a las 10 tarjetas */
+.col:nth-child(1) .card { border-color: #fbcfe8 !important; } /* Rosa */
+.col:nth-child(2) .card { border-color: #bbf7d0 !important; } /* Verde Mentol */
+.col:nth-child(3) .card { border-color: #fef3c7 !important; } /* Amarillo Pastel */
+.col:nth-child(4) .card { border-color: #bfdbfe !important; } /* Azul Cielo */
+.col:nth-child(5) .card { border-color: #ddd6fe !important; } /* Morado/Lila */
+.col:nth-child(6) .card { border-color: #fed7aa !important; } /* Naranja suave */
+.col:nth-child(7) .card { border-color: #99f6e4 !important; } /* Turquesa */
+.col:nth-child(8) .card { border-color: #fecaca !important; } /* Coral/Rojo */
+.col:nth-child(9) .card { border-color: #e9d5ff !important; } /* Violeta */
+.col:nth-child(10) .card { border-color: #d1d5db !important; } /* Gris Platino */
+
+/* Efecto hover interactivo */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    filter: brightness(1.02);
+}
+
+/* =========================================
+   CONTENEDOR DE CANVAS
+   ========================================= */
+.canvas-container {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    background-color: #ffffff;
+    border: 1px dashed #cbd5e1;
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* =========================================
+   TEXTOS Y BADGES
+   ========================================= */
+.card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.text-muted {
+    font-size: 0.85rem;
+    color: #64748b !important;
+}
+
+.badge {
+    border-radius: 50px;
+    padding: 6px 14px;
+    font-weight: 600;
+}
+
+.bg-pink   { background-color: #fce7f3; color: #9d174d; }
+.bg-green  { background-color: #dcfce7; color: #166534; }
+.bg-yellow { background-color: #fef3c7; color: #92400e; }
+.bg-blue   { background-color: #dbeafe; color: #1e40af; }
+.bg-purple { background-color: #f3e8ff; color: #6b21a8; }
+
+/* =========================================
+   ESTILOS DEL FOOTER
+   ========================================= */
+footer {
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+footer hr {
+    opacity: 0.1;
+    width: 30%;
+    margin: 1rem auto;
+}
+
+footer p {
+    letter-spacing: 0.5px;
+    margin-bottom: 0.25rem;
+}
+
+footer .text-primary {
+    color: #4f46e5 !important;
+    font-weight: 700;
+}
+#canvas {
+  background-color: #333;
+}
+
